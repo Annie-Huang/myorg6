@@ -1,0 +1,80 @@
+Nx Explainer: Using Nx to Scale React Development, with Victor Savkin
+https://www.youtube.com/watch?v=jCf92IyR-GE&t=34s
+https://github.com/Annie-Huang/myorg6
+
+
+==========================================================
+
+
+Using Nx to Scale your React Development
+
+Two Aspects of Scaling:
+1. Tech (making it fast)
+2. Org (letting many team work in the same repo)
+
+Nx - Extensible Dev Tools for Monorepos
+
+Highlights:
+1. A mighty general purpose metadata-driven CLI (with editor support)
+	- How does it compare to the CLIs you know and use?
+2. Monorepos features
+	- Distributed computation memoization
+	- Code change anlysis
+	- How does it compare to Lerna and Yarn Workspaces
+
+
+C:\react>npx create-nx-workspace@next --preset=react
+npx: installed 198 in 23.743s
+? Workspace name (e.g., org name)     myorg6
+? Application name                    shop
+? Default stylesheet format           CSS
+
+
+>  NX   NOTE  First time using Nx? Check out this interactive Nx tutorial.
+
+  https://nx.dev/react/tutorial/01-create-application
+
+  Prefer watching videos? Check out this free Nx course on YouTube.
+  https://www.youtube.com/watch?v=2mYLe9Kp9VM&list=PLakNactNC1dH38AfqmwabvOszDmKriGco
+
+
+C:\react\myorg6>nx e2e shop-e2e --watch
+If you look at workspace.json:
+    "shop-e2e": {
+      "architect": {
+        "e2e": {...},
+        "lint": {...}
+        }
+      }
+You can see e2e is a target for shop-e2e.
+
+C:\react\myorg6>nx e2e shop-e2e --help        << Find out more options available for "shop-e2e's e2e"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
