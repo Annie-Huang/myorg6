@@ -107,7 +107,7 @@ nx generate @nrwl/react:application --help
 
 ----------------------------------------------------
 
-
+C:\react\myorg6>nx generate @nrwl/react:library --name=ui --no-component --no-interactive --dry-run
 
 
 

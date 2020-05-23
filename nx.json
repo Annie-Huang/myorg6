@@ -25,6 +25,9 @@
     "shop-e2e": {
       "tags": [],
       "implicitDependencies": ["shop"]
+    },
+    "ui": {
+      "tags": []
     }
   }
 }
