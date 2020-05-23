@@ -2,8 +2,10 @@ Nx Explainer: Using Nx to Scale React Development, with Victor Savkin
 https://www.youtube.com/watch?v=jCf92IyR-GE&t=34s
 https://github.com/Annie-Huang/myorg6
 
+https://github.com/nrwl/nx/blob/master/packages/react/collection.json
+https://github.com/nrwl/nx/blob/master/packages/web/collection.json
 
-==========================================================
+##############################################################################
 
 
 Using Nx to Scale your React Development
@@ -23,6 +25,10 @@ Highlights:
 	- How does it compare to Lerna and Yarn Workspaces
 
 
+##############################################################################
+
+
+
 C:\react>npx create-nx-workspace@next --preset=react
 npx: installed 198 in 23.743s
 ? Workspace name (e.g., org name)     myorg6
@@ -38,31 +44,68 @@ npx: installed 198 in 23.743s
   https://www.youtube.com/watch?v=2mYLe9Kp9VM&list=PLakNactNC1dH38AfqmwabvOszDmKriGco
 
 
-C:\react\myorg6>nx e2e shop-e2e --watch
+
+
+
 If you look at workspace.json:
     "shop-e2e": {
       "architect": {
         "e2e": {...},
         "lint": {...}
-        }
       }
+    }
+    "shop": {
+      "architect": {
+        "build": {...},
+        "serve": {...},
+        "lint": {...},
+        "test": {...},
+      }
+    }
 You can see e2e is a target for shop-e2e.
-
+C:\react\myorg6>nx e2e shop-e2e --watch
 C:\react\myorg6>nx e2e shop-e2e --help        << Find out more options available for "shop-e2e's e2e"
 
+C:\react\myorg6>nx build shop --prod
+C:\react\myorg6>nx build shop --help
 
 
+----------------------------------------------------
+
+I think this is what nx is doing a poor job:
+without using the vscode console, look at the code in https://github.com/nrwl/nx/blob/master/packages/react/collection.json
+How do i know the following command exists?
+nx generate @nrwl/react:application
+nx generate @nrwl/react:library
+nx generate @nrwl/react:component
+nx generate @nrwl/react:redux
+nx generate @nrwl/react:storybook-configuration
+nx generate @nrwl/react:component-story
+nx generate @nrwl/react:stories
+nx generate @nrwl/react:component-cypress-spec
+nx generate @nrwl/web:application
+nx generate @nrwl/workspace:move
+nx generate @nrwl/workspace:remove
+nx generate @nrwl/workspace:library
+
+nx generate @nrwl/react:application --help
+
+"name": "@nrwl/react",                https://github.com/nrwl/nx/blob/master/packages/react/package.json
+    "extends": ["@nrwl/workspace"],   https://github.com/nrwl/nx/blob/master/packages/react/collection.json
+    init | application | library | component | redux | storybook-configuration | component-story | stories | component-cypress-spec
 
 
+"name": "@nrwl/web",                  https://github.com/nrwl/nx/blob/master/packages/web/package.json
+     "extends": ["@nrwl/workspace"],  https://github.com/nrwl/nx/blob/master/packages/web/collection.json
+      init | application
 
 
+"name": "@nrwl/workspace",            https://github.com/nrwl/nx/blob/master/packages/workspace/package.json
+                                      https://github.com/nrwl/nx/blob/master/packages/workspace/collection.json
+     workspace | ng-add | preset | move | remove | ng-new | tao-new | library | workspace-schematic
 
 
-
-
-
-
-
+----------------------------------------------------
 
 
 
