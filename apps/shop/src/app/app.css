@@ -130,3 +130,43 @@
   width: 16px;
   margin-right: 4px;
 }
+
+
+
+div.cart {
+  padding: 5px;
+  margin: 10px 0;
+  background-color: lightblue;
+}
+
+div.item {
+  padding: 5px;
+  margin: 10px 0;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
