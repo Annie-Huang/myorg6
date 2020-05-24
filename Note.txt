@@ -116,7 +116,7 @@ export:
 C:\react\myorg6>nx generate @nrwl/react:component --name=item-list --project=ui --export --no-interactive --dry-run
 
 
-
+C:\react\myorg6>npm install @nrwl/storybook --save-dev
 
 
 
