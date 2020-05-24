@@ -100,7 +100,8 @@ nx generate @nrwl/workspace:move
 nx generate @nrwl/workspace:remove
 nx generate @nrwl/workspace:library
 
-nx generate @nrwl/react:application --help
+nx list @nrwl/react                             << List all options
+nx generate @nrwl/react:application --help      << List all sub options
 
 "name": "@nrwl/react",                https://github.com/nrwl/nx/blob/master/packages/react/package.json
     "extends": ["@nrwl/workspace"],   https://github.com/nrwl/nx/blob/master/packages/react/collection.json
