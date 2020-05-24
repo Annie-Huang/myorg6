@@ -5,7 +5,7 @@ import ItemList from './item-list';
 
 describe(' ItemList', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<ItemList />);
+    const { baseElement } = render(<ItemList items={[]} addToCart={() => {}}/>);
     expect(baseElement).toBeTruthy();
   });
 });
