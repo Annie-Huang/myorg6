@@ -164,3 +164,11 @@ C:\react\myorg6>nx dep-graph
 C:\react\myorg6>nx test shop --with-deps --parallel
 C:\react\myorg6>nx generate @nrwl/react:application --name=admin --no-interactive --dry-run
 
+C:\react\myorg6>nx test admin --with-deps               << If you run this the second time, you will notice it's retrieve the result from cache:
+>  NX   SUCCESS  Running target "test" succeeded
+  Nx read the output from cache instead of running the command for 2 out of 2 projects.
+
+
+
+
+
