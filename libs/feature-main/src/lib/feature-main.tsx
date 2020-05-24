@@ -22,7 +22,7 @@ export const FeatureMain = () => {
   const [cart, setCart] = useState([]);
   return (
     <>
-      <div className="cart">{cart.length} items in the cart</div>
+      <div className="cart">{cart.length} items in the cart!!!</div>
       <div><ItemList items={ITEMS} addToCart={(code) => setCart([...cart, code])} /></div>
     </>
   );

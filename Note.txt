@@ -21,9 +21,21 @@ Highlights:
 	- How does it compare to the CLIs you know and use?
 2. Monorepos features
 	- Distributed computation memoization
-	- Code change anlysis
+	- Code change analysis
 	- How does it compare to Lerna and Yarn Workspaces
 
+
+Nx - Set of Dev Tools for Monorepos
+
+1. Metadata-driven CLI
+2. Monorepo goodness: computation caching + code change analysis
+
+Scale Your Org:
+
+1. Ownership, dependencies
+2. Full stack
+
+nx.dev/react
 
 ##############################################################################
 
@@ -168,7 +180,7 @@ C:\react\myorg6>nx test admin --with-deps               << If you run this the s
 >  NX   SUCCESS  Running target "test" succeeded
   Nx read the output from cache instead of running the command for 2 out of 2 projects.
 
-
-
+C:\react\myorg6>nx affected:dep-graph       << If you chnage a lib, you can run thi one to see what app is is impacted.
+C:\react\myorg6>nx affected --target=test   << Only test the app/libs that are effected.
 
 
