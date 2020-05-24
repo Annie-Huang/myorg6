@@ -155,7 +155,7 @@ C:\react\myorg6>nx e2e ui-e2e
 C:\react\myorg6>nx generate @nrwl/react:library --name=feature-main --no-interactive --dry-run
 C:\react\myorg6>nx generate @nrwl/react:library --name=feature-about --no-interactive --dry-run
 
-
+C:\react\myorg6>npm install --save react-router-dom
 
 
 
