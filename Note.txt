@@ -131,4 +131,9 @@ C:\react\myorg6>npm install @nrwl/storybook --save-dev
                           3 | import { ItemList, ItemListProps  } from './item-list';
 
 
+!!!! All the Nx generate command need to run it as independent command in terminal rather than nx console.
+     The nx console will somehow use yarn.lock which I don't want to use
+!!!!
+
+C:\react\myorg6>npm install     << Do npm install because I am using npm, not yarn.
 
