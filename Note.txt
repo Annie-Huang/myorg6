@@ -162,5 +162,5 @@ http://localhost:4200/about
 
 C:\react\myorg6>nx dep-graph
 C:\react\myorg6>nx test shop --with-deps --parallel
-
+C:\react\myorg6>nx generate @nrwl/react:application --name=admin --no-interactive --dry-run
 
