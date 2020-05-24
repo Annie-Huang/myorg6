@@ -17,7 +17,8 @@
     "baseUrl": ".",
     "paths": {
       "@myorg6/ui": ["libs/ui/src/index.ts"],
-      "@myorg6/feature-main": ["libs/feature-main/src/index.ts"]
+      "@myorg6/feature-main": ["libs/feature-main/src/index.ts"],
+      "@myorg6/feature-about": ["libs/feature-about/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
