@@ -107,8 +107,13 @@ nx generate @nrwl/react:application --help
 
 ----------------------------------------------------
 
+If you have vscode nx plugin, you can tick different options in the interface.
 C:\react\myorg6>nx generate @nrwl/react:library --name=ui --no-component --no-interactive --dry-run
 
+The console said:
+export:
+  When true, the component is exported from the project index.ts (if it exists)
+C:\react\myorg6>nx generate @nrwl/react:component --name=item-list --project=ui --export --no-interactive --dry-run
 
 
 
