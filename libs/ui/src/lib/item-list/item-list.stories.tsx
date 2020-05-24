@@ -1,6 +1,6 @@
-import { ,  } from '@storybook/addon-knobs';
 import React from 'react';
-import { ItemList, ItemListProps  } from './item-list';
+import { ItemList, ItemListProps } from './item-list';
+import { object } from '@storybook/addon-knobs';
 
 export default {
   component: ItemList,
@@ -8,13 +8,17 @@ export default {
 };
 
 export const primary = () => {
-  
-  
+  /* eslint-disable-next-line */
   const props:ItemListProps = {
-    items: ('items', ),
-    addToCart: ('addToCart', ),
+    items: object('items', [
+      {
+        code: 'blanket',
+        description: 'fancy blanket'
+      }
+    ]),
+    addToCart: () => {}
   };
-  
 
-  return <ItemList items = {props.items} addToCart = {props.addToCart}  />;
+
+  return <ItemList items={props.items} addToCart={props.addToCart} />;
 };
