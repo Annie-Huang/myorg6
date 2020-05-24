@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import './app.css';
 
 import { ReactComponent as Logo } from './logo.svg';
+import {ItemList} from '@myorg6/ui';
 
 const ITEMS = [
   {
@@ -23,7 +24,7 @@ const ITEMS = [
 export const App = () => {
   const [cart, setCart] = useState([]);
 
-  const items = ITEMS.map((item) => (
+/*  const items = ITEMS.map((item) => (
     <div className="item">
       <p>{item.description}</p>
       <button
@@ -33,7 +34,7 @@ export const App = () => {
         Add to cart
       </button>
     </div>
-  ));
+  ));*/
 
   return (
     <div className="app">
@@ -43,7 +44,8 @@ export const App = () => {
       </header>
       <main>
         <div className="cart">{cart.length} items in the cart</div>
-        <div>{items}</div>
+        {/*<div>{items}</div>*/}
+        <div><ItemList items={ITEMS} addToCart={(code) => setCart([...cart, code])} /></div>
       </main>
     </div>
   );
