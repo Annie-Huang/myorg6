@@ -117,12 +117,18 @@ C:\react\myorg6>nx generate @nrwl/react:component --name=item-list --project=ui 
 
 
 C:\react\myorg6>npm install @nrwl/storybook --save-dev
+    <<< This generated package-lock.json. OMG, it is using yarn.lock. No, don't like yarn.
 
 
+> Executing task: nx generate @nrwl/react:storybook-configuration --name=ui --configureCypress --generateStories --no-interactive --dry-run <
+? Do you want to generate Cypress specs as well? (Y/n) y
 
-
-
-
+? Do you want to generate Cypress specs as well? Yes
+                        Could not format /libs/ui/src/lib/item-list/item-list.stories.tsx because Identifier expected. (1:10)
+                        > 1 | import { ,  } from '@storybook/addon-knobs';
+                            |          ^
+                          2 | import React from 'react';
+                          3 | import { ItemList, ItemListProps  } from './item-list';
 
 
 
