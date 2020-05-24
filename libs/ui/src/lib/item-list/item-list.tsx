@@ -12,8 +12,8 @@ export const ItemList = (props: ItemListProps) => {
   return (
     <>
       {
-        props.items.map((item) => (
-          <div className="item">
+        props.items.map((item, index) => (
+          <div className="item" key={index}>
             <p>{item.description}</p>
             <button
               item-code={item.code}

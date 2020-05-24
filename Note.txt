@@ -156,6 +156,8 @@ C:\react\myorg6>nx generate @nrwl/react:library --name=feature-main --no-interac
 C:\react\myorg6>nx generate @nrwl/react:library --name=feature-about --no-interactive --dry-run
 
 C:\react\myorg6>npm install --save react-router-dom
-
+C:\react\myorg6>nx serve shop
+http://localhost:4200/
+http://localhost:4200/about
 
 
